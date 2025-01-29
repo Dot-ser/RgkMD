@@ -27,7 +27,7 @@ if (!(process.env.SESSION || process.env.SESSION_ID)) throw new Error("No sessio
 module.exports = {
     START_MSG: process.env.START_MSG || "_*DOT SER*_",
     VERSION: 'v9.9.9',
-    ALIVE: process.env.ALIVE || "https://te.legra.ph/file/c6d965cdff891df649c25.jpg Hey {sender}, I'm alive \n Uptime: {uptime}",
+    ALIVE: process.env.ALIVE || "https://files.catbox.moe/0lipny.jpeg Hey {sender}, I'm alive \n Uptime: {uptime}",
     BLOCK_CHAT: process.env.BLOCK_CHAT || '',
     PM_ANTISPAM: convertToBool(process.env.PM_ANTISPAM) || '',
     ALWAYS_ONLINE: convertToBool(process.env.ALWAYS_ONLINE) || false,
