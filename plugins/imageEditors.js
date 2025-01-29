@@ -1,3 +1,4 @@
+/*
 let {Module} = require('../main');
 let {MODE} = require('../config');
 let {edit} = require("./misc/editors.js")
@@ -113,3 +114,4 @@ ffmpeg('st.mp4')
 .on('end', async () => {
 await m.sendReply(fs.readFileSync('tri.webp'),"sticker");
 });}));  
+*/
