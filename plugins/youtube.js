@@ -1,8 +1,4 @@
-/* Copyright (C) 2022 Sourav KL11.
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-Raganork MD - Sourav KL11
-*/
+
 const {
   Module
 } = require('../main');
@@ -34,6 +30,7 @@ let configs = settingsMenu
 var handler = HANDLERS !== 'false'?HANDLERS.split("")[0]:""
 let fm = MODE == 'public' ? false : true
 const getID = /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed|shorts\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
+/*
 Module({
   pattern: 'play ?(.*)',
   fromMe: fm,
@@ -198,7 +195,7 @@ Module({
   return await message.sendInteractiveMessage(message.jid, list,{quoted: message.data,image:{url:searchImage}})
 }
 }));
-
+*/
 Module({
   pattern: 'yts ?(.*)',
   fromMe: fm,
@@ -271,9 +268,7 @@ return await message.sendInteractiveMessage(message.jid, buttons,{quoted: messag
   list.head.footer = "Found "+list.body.sections[0].rows.length+" results"
   return await message.sendInteractiveMessage(message.jid, list,{quoted: message.data,image:{url:searchImage}})
 }));
-/*
 
-IN CASE BUTTON VEENDUM OOMFIYAL:
 
 Module({
   pattern: 'ytv ?(.*)',
