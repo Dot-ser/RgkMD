@@ -3,7 +3,7 @@ Module({
   pattern: 'textmaker ?(.*)',
   fromMe: auto,
 
-*/
+
 const {Module} = require('../main')
 const {skbuffer} = require('raganork-bot');
 const axios = require('axios');
@@ -531,3 +531,5 @@ let result_url = (await axios(api_url)).data
 if (typeof result_url === "number") return await m.sendReply("*Need "+result_url+" text!*\n*Ex: Text1,Text2*")
 await m.sendReply({url: result_url},'image') 
 });
+
+*/
