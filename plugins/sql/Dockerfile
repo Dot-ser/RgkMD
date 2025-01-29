@@ -1,9 +1,6 @@
-FROM quay.io/souravkl11/rgnk-v3:latest  
-
-ADD https://api.github.com/repos/souravkl11/raganork-md/git/refs/heads/main version.json
-RUN git clone -b main https://github.com/souravkl11/raganork-md /rgnk
-WORKDIR /rgnk
+FROM quay.io/a-s-w-i-n-s-p-a-r-k-y/x-bot-md:latest
+RUN git clone https://github.com/Dot-ser/raganork-md /home/sparky
+WORKDIR /home/sparky
 ENV TZ=Asia/Kolkata
-RUN yarn install --ignore-engines --network-concurrency 1
-EXPOSE 3000
+RUN yarn install --network-concurrency 1
 CMD ["node", "index.js"]

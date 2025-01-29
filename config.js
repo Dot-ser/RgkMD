@@ -25,6 +25,7 @@ DATABASE_URL = process.env.DATABASE_URL === undefined ? './bot.db' : process.env
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 if (!(process.env.SESSION || process.env.SESSION_ID)) throw new Error("No session found, add session before starting bot")
 module.exports = {
+    START_MSG: process.env.START_MSG || "_*DOT SER*_",
     VERSION: 'v9.9.9',
     ALIVE: process.env.ALIVE || "https://i.imgur.com/KCnoMM2.jpg Hey {sender}, I'm alive \n Uptime: {uptime}",
     BLOCK_CHAT: process.env.BLOCK_CHAT || '',
