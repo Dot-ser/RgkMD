@@ -1,0 +1,39 @@
+{
+  "name": "sparky",
+  "version": "5.0.0",
+  "description": "A light weight WhatsApp bot.",
+  "scripts": {
+    "start": "pm2 start . --attach --name sparky"
+  },
+  "overrides": {
+    "raganork-bot": {
+      "youtubei.js": "^2.5.3"
+    }
+  },
+  "author": "pooran saurav",
+  "developer": "pooran saurav",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "@adiwajshing/baileys": "git+https://github.com/souravkl11/Baileys.git",
+    "@adiwajshing/keyed-db": "0.2.4",
+    "@whiskeysockets/baileys": "github:sou6av/baileys-js",
+    "acrcloud": "1.4.0",
+    "adm-zip": "0.5.9",
+    "awesome-phonenumber": "5.3.0",
+    "badwords": "1.0.0",
+    "google-tts-api": "2.0.2",
+    "image-to-pdf": "2.0.0",
+    "imgur": "^2.2.0",
+    "link-preview-js": "2.1.15",
+    "mongodb": "^4.3.1",
+    "node-cron": "3.0.1",
+    "node-webpmux": "^3.1.0",
+    "pg": "^8.5.1",
+    "pm2": "^5.2.2",
+    "raganork-bot": "^3.0.1",
+    "sequelize": "^6.13.0",
+    "sqlite3": "^5.0.0",
+    "string-crypto": "2.0.2",
+    "youtubei.js": "^9.1.0"
+  }
+}
