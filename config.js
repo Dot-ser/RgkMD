@@ -25,7 +25,7 @@ DATABASE_URL = process.env.DATABASE_URL === undefined ? './bot.db' : process.env
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 if (!(process.env.SESSION || process.env.SESSION_ID)) throw new Error("No session found, add session before starting bot")
 module.exports = {
-    START_MSG: process.env.START_MSG || "_*DOT SER*_",
+    START_MSG: process.env.START_MSG || "DOT SER",
     VERSION: 'v9.9.9',
     ALIVE: process.env.ALIVE || "https://files.catbox.moe/0lipny.jpeg, Hey {sender}, I'm alive \n Uptime: {uptime}",
     BLOCK_CHAT: process.env.BLOCK_CHAT || '',
@@ -66,6 +66,8 @@ module.exports = {
     TAKE_KEY: process.env.TAKE_KEY || '',
     MODE: process.env.MODE || 'private',
     WARN: process.env.WARN || '4',
+    RENDER_API: process.env.RENDER_API || false,
+    RENDER_NAME: process.env.RENDER_NAME || '',
     ANTILINK_WARN: process.env.ANTILINK_WARN || '',
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
