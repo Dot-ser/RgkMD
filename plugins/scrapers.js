@@ -288,6 +288,7 @@ Module({
     }
     return await message.client.sendMessage(message.jid, listMessage,{quoted: message.data})
  }));
+/*
 Module({
     pattern: 'video ?(.*)',
     fromMe: w,
@@ -309,6 +310,7 @@ Module({
             caption,
             thumbnail: await skbuffer(`https://i.ytimg.com/vi/${vid}/hqdefault.jpg`)
         },{quoted:message.data});
+	*/
     });
 Module({
     pattern: 'news ?(.*)',
