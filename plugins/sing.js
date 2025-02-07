@@ -104,21 +104,22 @@ Module({
             throw new Error("Failed to fetch audio data.");
         }
 
-        // Extract required details from response
-        var { title, download_url, thumbnail, quality, creator } = result;
+        // Extract details from response
+        var { download_url, title, thumbnail } = result;
 
         // Download the audio file
         var audio = await skbuffer(download_url);
 
-        // Send the audio as a voice message
+        // Send the audio with metadata
         await message.client.sendMessage(
             message.jid,
             {
                 audio,
                 mimetype: 'audio/mp4',
-                ptt: true,
-                caption: `🎵 *${title}*\n📌 *Quality:* ${quality}\n👤 *Creator:* ${creator}\n\n_Made by DOT_007 ❤️_`,
-                thumbnail: await skbuffer(thumbnail)
+                ptt: false,  // Set to true if you want it as a voice message
+                fileName: `${title}.mp3`,
+                caption: `🎵 *${title}*`,
+                thumbnail: await skbuffer(thumbnail),
             },
             { quoted: message.data }
         );
