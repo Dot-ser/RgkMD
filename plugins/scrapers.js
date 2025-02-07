@@ -310,8 +310,8 @@ Module({
             caption,
             thumbnail: await skbuffer(`https://i.ytimg.com/vi/${vid}/hqdefault.jpg`)
         },{quoted:message.data});
-	*/
-    });
+	
+    });*/
 Module({
     pattern: 'news ?(.*)',
     fromMe: w,
