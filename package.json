@@ -14,9 +14,8 @@
   "developer": "pooran saurav",
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "@adiwajshing/baileys": "git+https://github.com/souravkl11/Baileys.git",
+    "@adiwajshing/baileys": "git+https://github.com/WhiskeySockets/Baileys.git",
     "@adiwajshing/keyed-db": "0.2.4",
-    "@whiskeysockets/baileys": "git+https://github.com/WhiskeySockets/Baileys.git",
     "acrcloud": "1.4.0",
     "adm-zip": "0.5.9",
     "awesome-phonenumber": "5.3.0",
