@@ -1,12 +1,6 @@
 FROM quay.io/a-s-w-i-n-s-p-a-r-k-y/x-bot-md:latest
-
-WORKDIR /DOTSERMODZ
-
+RUN git clone https://github.com/Dot-ser/RgkMD /home/DOTSERMODZ
+WORKDIR /home/DOTSERMODZ
 ENV TZ=Asia/Kolkata
-
-COPY package.json yarn.lock ./
 RUN yarn install --network-concurrency 1
-
-COPY . .
-
 CMD ["node", "index.js"]
